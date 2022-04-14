@@ -1,0 +1,95 @@
+/*
+AUTOR DO MODELO UTILIZADO: starline
+
+CRÉDITOS DO MODELO UTILIZADO PARA PRATICAR: https://br.freepik.com/vetores-gratis/modelo-criativo-de-design-do-formulario-de-login-do-membro_1146076.htm#&position=18&from_view=detail#&position=18&from_view=detail*/
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;   
+    background-color: #01131f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 47px 20px;
+}
+.container__2{
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    margin: 5px;
+    cursor: pointer;
+    background-color: #4ec8c1;
+    color: white;
+    padding: 53px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    transition: .3s;
+}
+.forget{
+    background-color:  #015faf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 22px;
+    border: none;
+    border-radius: 2px;
+}
+form > input{
+    background-color: #d5d5d5;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin: 20px 0;
+    padding: 0 5px;
+    outline: none;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+form > input:focus{
+    box-shadow: 3px 3px 2px  1px #ccc;
+    color: gray;
+}
+p{
+    margin-top: 10px;
+    font-style: italic;
+}
+button:hover{
+    background-color: #3c898d;
+}
+@media(max-width: 425px){
+    .container{
+        flex-direction: column;
+    }
+    button, .forget{
+        padding: 10px 20px;
+    }
+    button{
+        margin: 5px;
+        width: 247px;
+    }
+    .forget{
+        width: 205px;
+        margin-top: 5px;
+    }
+}
